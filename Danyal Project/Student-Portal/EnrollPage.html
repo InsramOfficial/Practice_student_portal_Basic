@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            padding-top: 9px;
+            /* Adjusted padding to account for the fixed navbar height */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .fixed-top {
+            position: static;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .ftco-navbar-light {
+            background: #fff !important;
+            z-index: 3;
+            padding: 10px 10px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
+            -moz-box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
+            box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
+        }
+
+        .ftco-navbar-light .navbar-brand {
+            color: #000;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .Student-text {
+            color: rgb(143, 143, 52);
+        }
+
+        .ftco-navbar-light .navbar-nav>.nav-item.active>a {
+            color: #8f3416;
+        }
+
+        .ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover {
+            color: #8f3416;
+        }
+
+        .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
+            font-size: 14px;
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: 400;
+            color: #333333;
+            position: relative;
+            opacity: 1 !important;
+        }
+
+        /* Search Container Styles */
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .search-container input {
+            padding: 4px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        .search-container button:hover {
+            background-color: rgba(148, 148, 24, 0.242);
+        }
+
+        /* Table Styles */
+        .course-table {
+            margin-top: 20px;
+        }
+
+        .course-table th,
+        .course-table td {
+            text-align: left;
+            padding: 10px;
+        }
+
+        .course-table th {
+            background-color: #f8f9fa;
+        }
+
+        .course-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .view-btn {
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        .portal-content {
+            margin: 50px;
+            padding: 70px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid mt-2">
+        <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light fixed-top" id="ftco-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><span class="Student-text">Student</span> Portal</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto mr-md-3">
+                        <li class="nav-item "><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item active"><a href="#" class="nav-link">All Courses</a></li>
+                        <li class="nav-item "><a href="#" class="nav-link">My-Enrollement</a></li>
+                        <li class="nav-item "><a href="#" class="nav-link">Profile</a></li>
+                        <li class="nav-item "><a href="#" class="nav-link">Graduation</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Signout</a></li>
+                        <div class="search-container">
+                            <input type="text" placeholder="Course Search">
+                            <button type="button" class="btn btn-warning">Search</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END nav -->
+    </div>
+    <!-- Course Table -->
+    <div class="container portal-content">
+        <h2>Software Engenerring software</h2>
+        <p>This module provides an in-depth look at the Service-Oriented Architecture paradigm and, more specifically,
+            at its recent development: Microservices. You will gain theoretical knowledge of software design using a
+            modular, loosely coupled approach, as well as practical experience with implementation tools and techniques
+            highly valued in the industry.</p>
+
+
+        <h4>Fee: </h4>
+
+        <button class="btn btn-primary ">Enroll</button>
+    </div>
+
+
+</body>
+
+</html>

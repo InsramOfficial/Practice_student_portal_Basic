@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        
+        body {
+            padding-top: 9px;
+            /* Adjusted padding to account for the fixed navbar height */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .fixed-top {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .ftco-navbar-light {
+            background: #fff !important;
+            z-index: 3;
+            padding: 10px 10px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
+            -moz-box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
+            box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
+        }
+
+        .ftco-navbar-light .navbar-brand {
+            color: #000;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .Student-text {
+            color: rgb(143, 143, 52);
+        }
+
+        .ftco-navbar-light .navbar-nav>.nav-item.active>a {
+            color: #8f3416;
+        }
+
+        .ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover {
+            color: #8f3416;
+        }
+
+        .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
+            font-size: 14px;
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: 400;
+            color: #333333;
+            position: relative;
+            opacity: 1 !important;
+        }
+
+        /* Search Container Styles */
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .search-container input {
+            padding: 4px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        .search-container button:hover {
+            background-color: rgba(148, 148, 24, 0.242);
+        }
+
+        /* Additional Student Portal Styles */
+        .portal-content {
+            margin: 20px;
+            padding: 70px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .portal-content h2 {
+            color: #333;
+        }
+
+        .portal-content p {
+            color: #666;
+        }
+        /* Quick Links Styles */
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid mt-2">
+        <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><span class="Student-text">Student</span> Portal</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto mr-md-3">
+                        <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">All Courses</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Signout</a></li>
+                        <div class="search-container">
+                            <input type="text" placeholder="Course Search">
+                            <button type="button" class="btn btn-warning">Search</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END nav -->
+
+        <!-- Student Portal Content -->
+        <div class="portal-content ">
+            <h1> Hello, Danyal!</h1>
+            <h4 class="mt-3">Welcome to the Student Portal</h4>
+            <p>Find information about courses, stay updated with announcements, and enhance your learning experience.
+            </p>
+            <p class="content">Once you have registered as a student, which happens automatically upon enrolling in your first course, you
+                will be able to access and edit your student profile.</p>
+            <p class="content">You will also be able to see the courses you are enrolled in.</p>
+            
+            <p class="content">Use the navigation bar above to access the different features of your portal.</p>
+           
+
+        </div>
+    </div>
+
+</body>
+
+</html>
